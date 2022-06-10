@@ -15,11 +15,20 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='container'>
                 <motion.h1
-                animate={{ scale: 1, opacity: 1,}}
-                initial={{ scale: 0, opacity: 0,}}
+                animate={{ 
+                    scale: 1, 
+                    opacity: 1,
+                }}
+                initial={{ 
+                    scale: 0, 
+                    opacity: 0,
+                }}
                 transition={{ 
                     ease: "backIn",
                     duration: 2,
+                    type: "spring",
+                    damping: 10,
+                    stiffness: 3000,
                 }}
                 >
                     <span><FcTodoList />Todo</span>App <br/>by John Bridges</motion.h1>

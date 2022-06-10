@@ -23,9 +23,10 @@ function App() {
           opacity: 0,
         }}
         transition={{ 
-        ease: "backIn",
-        duration: 5,
-        }}
+          ease: "backIn",
+          duration: 2,
+          
+      }}
         className='todo-app'>
            
         <TodoList />      
